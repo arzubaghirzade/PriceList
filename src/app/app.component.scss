@@ -1,0 +1,92 @@
+body {
+  overflow: hidden !important;
+}
+.home {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  header {
+    position: unset !important;
+    img {
+      width: 50px;
+      height: 50px;
+      margin-right: 1rem;
+    }
+  }
+  .bg-one {
+    &:before {
+      content: "";
+      position: absolute;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+      height: 100vh;
+      top: 0%;
+      left: 0;
+      background: #e3e3e3;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  .home-content {
+    display: flex;
+    height: 70vh;
+    img {
+      width: 100%;
+      margin: 0 auto;
+      min-height: 300px;
+      object-fit: contain;
+    }
+    ::ng-deep.ant-card {
+      max-width: 25%;
+      min-height: 40%;
+      transition: all 0.2s ease-in-out;
+    }
+    ::ng-deep.ant-card:hover {
+      transform: scale(1.03);
+    }
+  }
+  .login-div {
+    border-radius: 4px;
+    margin: 5rem;
+  }
+}
+.login {
+  background: #fff !important;
+}
+.navbar-nav {
+  flex-direction: unset !important;
+}
+::ng-deep.ant-table-footer, ::ng-deep.ant-table-thead>tr>th {
+  color: #1c5777 !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  background: #fff !important;
+}
+::ng-deep.ant-table-thead>tr>th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+  background-color: unset !important;
+}
+::ng-deep.ant-table-tbody>tr>td{
+  color: #1c5777;
+  font-weight: 700;
+  text-align: center;
+}
+::ng-deep.ant-table {
+  margin: 0 !important;
+  border-top-right-radius: 8px !important;
+  border-top-left-radius: 8px !important;  
+}
+::ng-deep.ant-modal-close:focus{
+  outline: none !important;
+}
+::ng-deep.ant-modal-body {
+    max-height: 50vh !important;
+    overflow-y: auto;
+}
+::ng-deep.ant-table-container, ::ng-deep.ant-table-container table>thead>tr:first-child th:last-child {
+  border-top-right-radius: 8px !important; 
+}
+::ng-deep.ant-table-container, ::ng-deep.ant-table-container table>thead>tr:first-child th:first-child {
+  border-top-left-radius: 8px !important; 
+}

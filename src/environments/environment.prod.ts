@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: false,
+  host: 'https://retoolapi.dev/fegf1n',
 };

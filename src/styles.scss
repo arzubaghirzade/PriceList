@@ -1,1 +1,129 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~ng-zorro-antd/ng-zorro-antd.min.css";
+
+:root {
+  --header-height: 80px;
+  --header-logo: 60px;
+  --user-img-width: 40px;
+  --navbar-width: 300px;
+  --main-color: #400c58;
+
+  @media (max-width: 1199px) {
+    --header-height: 60px;
+    --header-logo: 50px;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1 !important;
+}
+::-webkit-scrollbar-thumb {
+  background: #d9d9d9 !important;
+}
+::-webkit-scrollbar-thumb {
+  background: #400c58 !important;
+}
+.main-bg {
+  position: relative;
+  background-image: url("./assets/icons/bg-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: unset;
+  background-attachment: fixed;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #ffffffe3;
+    backdrop-filter: blur(1px);
+  }
+}
+.head-div {
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  h1 {
+    font-size: 16px;
+    color: #400c58;
+  }
+}
+.new-btn,
+.btn-submit:hover,
+.btn-submit:focus,
+.new-btn:hover,
+.new-btn:focus {
+  color: #400c58 !important;
+  background: #fff;
+  border: 1px solid #400c58 !important;
+}
+.btn-submit {
+  color: #fff !important;
+  border: 1px solid #400c58 !important;
+  background: #400c58;
+}
+.shadow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+
+  .logo {
+    img {
+      height: var(--header-logo);
+    }
+  }
+}
+.logout-avatar {
+  background-color: #d0e1f2;
+}
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.layout {
+  height: 91.5vh;
+}
+.social-icons {
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+.pointer {
+  cursor: pointer !important;
+}
+.min-h-80 {
+  min-height: 80px;
+}
+
+.social-res {
+  .circular-img img {
+    padding: 10px;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+
+  .learn-more {
+    color: #400c58;
+  }
+
+  .description {
+    max-width: 300px;
+  }
+}

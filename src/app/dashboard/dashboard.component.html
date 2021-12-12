@@ -1,0 +1,28 @@
+<section class="home">
+    <main class="bg-one">
+<ul>
+        <li [routerLink]="['../terminates/list/box-1']" class="text-center">box-1</li>
+        <li [routerLink]="['../terminates/list/box-1']" class="text-center">box-2</li>
+        <li [routerLink]="['../terminates/list/box-1']" class="text-center">box-3</li>
+        <li [routerLink]="['../terminates/list/box-1']" class="text-center">box-4</li>
+      </ul>
+      <main class="d-flex justify-content-around align-items-center home-content bg-one">
+        <nz-card
+          [routerLink]="['../terminates/list/box-1']"
+          nzHoverable
+          [nzCover]="coverTemplate1"
+          class="col-12 col-sm-12 col-md-4 col-lg-4 shadow"
+        >
+          <nz-card-meta
+            nzTitle="Price List"
+            nzDescription="Price List of products"
+          ></nz-card-meta>
+        </nz-card>
+        <ng-template #coverTemplate1>
+          <img alt="example" src="../../assets/icons/price-list.jpg" />
+        </ng-template>
+      </main>
+    </main>
+    
+    </section>
+    

@@ -1,0 +1,27 @@
+<div class="d-flex justify-content-between align-items-center head-div mx-3">
+    <h1 class="m-0">PriceList</h1>
+    </div>
+  <section class="m-3">
+      <nz-table #basicTable [nzData]="priceList">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>extErpPriceId</th>
+              <th>PriceId</th>
+              <th>priceListName</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let data of priceList; let i = index">
+              <td>{{ i + 1 }}</td>
+              <td>{{ data.id }}</td>
+              <td>{{ data.priceListID }}</td>
+              <td>{{ data.priceListName }}</td>
+              <td>
+                <span class="learn-more pointer" (click)="valuesDetails(data.id)"><i nz-icon nzType="edit" nzTheme="outline"></i></span>
+                </td>
+            </tr>
+          </tbody>
+        </nz-table>
+  </section>
